@@ -14,9 +14,11 @@ FROM gcr.io/distroless/nodejs:18 AS release-aio
 
 # EXPOSE 8080/tcp
 
-RUN mkdir /app
-WORKDIR /app
-COPY --from=builder /usr/share/src .
+# RUN mkdir /app
+# WORKDIR /app
+COPY --from=builder /usr/share/src /root
+WORKDIR /root
+
 RUN chmod +x entrypoint.sh
 
 COPY nginx.conf.example /etc/nginx/conf.d/uv.conf
