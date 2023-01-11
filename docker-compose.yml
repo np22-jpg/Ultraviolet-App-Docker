@@ -1,0 +1,17 @@
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: release-aio
+      # cache_to: 
+      # cache_from: 
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+      # - 3000:3000
+    environment:
+      - HOSTNAME=example.com
+      - EMAIL=user@email.com    # required for https
+      - STAGING=true           # Set to "true" to use LE staging
