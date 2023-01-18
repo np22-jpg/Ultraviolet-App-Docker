@@ -21,7 +21,9 @@ RUN cp -r /tmp/node_modules ./src/node_modules
 
 FROM quay.io/almalinuxorg/9-base AS base
 
-RUN dnf module --assumeyes enable nodejs:18
+RUN mkdir /rpms
+RUN dnf module --assumeyes --installroot /rpms enable nodejs:18
+
 COPY --from=quay.io/almalinuxorg/9-micro / /rpms
 RUN dnf install --assumeyes --setopt=install_weak_deps=false --nodocs \
   --installroot /rpms \
