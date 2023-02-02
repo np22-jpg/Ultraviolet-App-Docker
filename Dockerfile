@@ -7,6 +7,9 @@ RUN dnf install --assumeyes --setopt=install_weak_deps=false --nodocs \
 RUN npm install -g npm@$(curl "https://release-monitoring.org/api/v2/versions/?project_id=190206" | jq --raw-output '.stable_versions[0]')
 
 FROM installer AS builder
+
+RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet.git Ultraviolet
+
 WORKDIR /tmp
 COPY package.json ./
 # RUN npm install --omit=dev --frozen-lockfile
