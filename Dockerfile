@@ -9,6 +9,7 @@ RUN npm install -g npm@$(curl "https://release-monitoring.org/api/v2/versions/?p
 FROM installer AS builder
 
 RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet.git Ultraviolet
+RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet-Static.git Ultraviolet-Static
 
 WORKDIR /tmp
 COPY package.json ./
