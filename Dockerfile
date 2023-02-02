@@ -5,6 +5,7 @@ RUN dnf install --assumeyes --setopt=install_weak_deps=false --nodocs \
   git jq npm wget
 
 RUN npm install -g npm@$(curl "https://release-monitoring.org/api/v2/versions/?project_id=190206" | jq --raw-output '.stable_versions[0]')
+RUN npm install -g yarn
 
 FROM installer AS builder
 
@@ -14,7 +15,8 @@ RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultra
 WORKDIR /tmp
 COPY package.json ./
 # RUN npm install --omit=dev --frozen-lockfile
-RUN npm update
+# RUN npm update
+RUN yarn install --production
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

@@ -1,0 +1,15 @@
+.github
+.gitignore
+.eslintignore
+.eslintrc.json
+.prettierignore
+.prettierrc.json
+.replit
+app.json
+docker-compose.json
+entrypoint.sh
+LICENSE
+nginx.conf.example
+package-lock.json
+README.md
+replit.nix
