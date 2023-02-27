@@ -1,4 +1,4 @@
-FROM quay.io/almalinuxorg/9-base AS installer
+FROM quay.io/almalinuxorg/9-base:9 AS installer
 
 RUN dnf module --assumeyes enable nodejs:18
 RUN dnf install --assumeyes --setopt=install_weak_deps=false --nodocs \
@@ -9,8 +9,8 @@ RUN npm install -g yarn
 
 FROM installer AS builder
 
-RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet.git Ultraviolet
-RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet-Static.git Ultraviolet-Static
+# RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet.git Ultraviolet
+# RUN git clone --depth=1 --recursive https://github.com/titaniumnetwork-dev/Ultraviolet-Static.git Ultraviolet-Static
 
 WORKDIR /tmp
 COPY package.json ./
@@ -25,12 +25,12 @@ RUN cp -r /tmp/node_modules ./src/node_modules
 
 
 
-FROM quay.io/almalinuxorg/9-base AS base
+FROM quay.io/almalinuxorg/9-base:9 AS base
 
 RUN mkdir /rpms
 RUN dnf module --assumeyes --installroot /rpms --releasever=9 enable nodejs:18
 
-COPY --from=quay.io/almalinuxorg/9-micro / /rpms
+COPY --from=quay.io/almalinuxorg/9-micro:9 / /rpms
 RUN dnf install --assumeyes --setopt=install_weak_deps=false --nodocs \
   --installroot /rpms \
   --releasever=9 \
