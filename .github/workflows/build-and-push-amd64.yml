@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Build and Push to Docker Hub (AMD64)
 
 on:
   push:
@@ -41,6 +41,6 @@ jobs:
         with:
           target: release
           context: .
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node:latest,${{ steps.meta.outputs.tags }}
