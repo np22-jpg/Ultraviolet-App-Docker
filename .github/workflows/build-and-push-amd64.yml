@@ -23,7 +23,7 @@ jobs:
           images: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node
           tags: |
             type=raw,value={{date 'YYYYMMDD'}}
-            type=raw,value="latest"
+            type=raw,value=latest
             type=sha
 
       - name: Set up QEMU
@@ -46,3 +46,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
