@@ -1,5 +1,6 @@
 name: Build and Push to Docker Hub (ARM64)
 
+
 on:
   push:
     branches: ["main"]
@@ -23,6 +24,8 @@ jobs:
           images: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node
           tags: |
             type=raw,value={{date 'YYYYMMDD'}}
+            type=raw,value="latest"
+            type=sha
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -43,4 +46,4 @@ jobs:
           context: .
           platforms: linux/arm64
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node:latest,${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
