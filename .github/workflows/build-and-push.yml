@@ -1,5 +1,4 @@
-name: Build and Push to Docker Hub (ARM64)
-
+name: Build and Push to Docker Hub
 
 on:
   push:
@@ -44,7 +43,7 @@ jobs:
         with:
           target: release
           context: .
-          platforms: linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/ppc64le
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
