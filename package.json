@@ -22,7 +22,7 @@
     "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static"
   },
   "devDependencies": {
-    "eslint": "^8.32.0",
+    "eslint": "^8.35.0",
     "prettier": "^2.8.3"
   }
 }
