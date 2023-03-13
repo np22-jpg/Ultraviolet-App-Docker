@@ -1,0 +1,12 @@
+{
+    "name": "Ultraviolet-Devel",
+    "build": {
+      "dockerfile": "../docker/Containerfile",
+      "target": "devel",
+      "context": "../"
+    },
+    "forwardPorts": [
+      8080
+    ],
+  "workspaceFolder": "/app"
+  }

@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Build and Push to Docker Hub
 
 on:
   push:
@@ -8,21 +8,27 @@ on:
   schedule:
     - cron: "30 12 * * 0" # Run once every Sunday
 
+env:
+  REPO: ultraviolet-node
+  TEST_TAG: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node:test
+  ARCH: linux/amd64,linux/arm64
+
 jobs:
-  push_to_registry:
+  build_and_push_docker_images:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-
+  
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node
+          images: ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO }}
           tags: |
-            type=raw,value={{date 'YYYYMMDD'}}
+            type=raw,value=latest
+            type=raw,value=${{ github.sha }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -36,10 +42,36 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build & push Docker image
-        uses: docker/build-push-action@v3
+        # https://docs.docker.com/build/ci/github-actions/test-before-push/
+      - name: Build and export test image to Docker
+        uses: docker/build-push-action@v4
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
+          tags: ${{ env.TEST_TAG }}
+          file: ./docker/Dockerfile
+          load: true
+          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/${{ env.REPO }}:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/${{ env.REPO }}:buildcache,mode=max
+          build-args: |
+              NPM_BUILD=ci --omit=dev --frozen-lockfile
+
+      - name: Test
+        run: |
+          IMG=$(docker run --rm -d -p 8080:8080 ${{ env.TEST_TAG }});
+          chmod +x ./docker/test.sh
+          HOST=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $IMG)
+          ./docker/test.sh -p 8080 -h $HOST -t 15
+
+      - name: Build & push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./docker/Dockerfile
+          platforms: ${{ env.ARCH }}
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ultraviolet-node:latest,${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/${{ env.REPO }}:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/${{ env.REPO }}:buildcache,mode=max
+          build-args: |
+              NPM_BUILD=ci --omit=dev --frozen-lockfile
