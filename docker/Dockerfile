@@ -1,13 +1,13 @@
 FROM quay.io/fedora/fedora AS devel
-ARG NPM_BUILD=i
+ARG NPM_BUILD=npm i
 
-RUN dnf install --nodocs -y --setopt install_weak_deps=false npm nodejs
+RUN dnf install --nodocs -y --setopt install_weak_deps=false npm nodejs && npm i -g yarn
 
 RUN mkdir /app
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN /usr/bin/npm $NPM_BUILD
+RUN $NPM_BUILD
 COPY . .
 
 # Loosely based on https://catalog.redhat.com/software/containers/ubi9/ubi-micro/615bdf943f6014fa45ae1b58?container-tabs=dockerfile
