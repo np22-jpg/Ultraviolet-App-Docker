@@ -1,8 +1,7 @@
 FROM quay.io/fedora/fedora AS devel
 ARG NPM_BUILD=i
 
-RUN --mount=type=cache,target=/var/cache/dnf \
-    dnf install --nodocs -y --setopt install_weak_deps=false npm nodejs
+RUN dnf install --nodocs -y --setopt install_weak_deps=false npm nodejs
 
 RUN mkdir /app
 WORKDIR /app
