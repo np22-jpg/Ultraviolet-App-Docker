@@ -22,7 +22,6 @@ RUN --mount=type=cache,target=/var/cache/dnf \
     coreutils-single glibc-minimal-langpack nodejs curl-minimal && \
     dnf --installroot /output_container clean all
 
-
 FROM scratch AS release
 
 LABEL maintainer="TitaniumNetwork Ultraviolet Team"
@@ -32,11 +31,11 @@ LABEL description="Example application of Ultraviolet which can be deployed in p
 # Grab packages 
 COPY --from=image-builder /output_container/ / 
 # Grab Ultraviolet
-COPY --from=devel /app /app
+RUN echo "node::1000:1000::/app:/bin/sh" >> /etc/passwd 
+USER node
+COPY --from=devel --chown=1000:1000 /app /app
 WORKDIR /app
 RUN rm -rf $(cat docker/REMOVE_FROM_FINAL)
-
-USER 1001
 
 HEALTHCHECK --interval=5s --timeout=3s --start-period=5s \
   CMD /usr/bin/curl -f http://localhost:8080 || false
