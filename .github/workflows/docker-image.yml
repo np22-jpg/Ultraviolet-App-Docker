@@ -13,17 +13,15 @@ env:
 jobs:
   build_and_push_docker_images:
     name: Push Docker image to Docker Hub
+    
+    permissions:
+        packages: write
+        contents: read
+    
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-
-      - name: Login to DockerHub
-        if: github.event_name != 'pull_request'
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKERUSERNAME }}
-          password: ${{ secrets.DOCKERPASSWORD }}
 
       - name: Build Test Image
         uses: redhat-actions/buildah-build@v2
@@ -59,10 +57,56 @@ jobs:
           build-args: |
             NPM_BUILD=yarn install --production
 
+      # PUSH
+
+      - uses: sigstore/cosign-installer@v3.0.3 
+      - name: Write Cosign Key
+        run:  |
+          echo "${{ env.COSIGN_PRIVATE_KEY }}" > cosign.key;
+          wc -c cosign.key;
+        env:
+          COSIGN_EXPERIMENTAL: false
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}       
+
+
       - name: Push To Docker Hub
-        if: github.event_name != 'pull_request'
+        id: push-to-docker
         uses: redhat-actions/push-to-registry@v2
         with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           image: ${{ steps.build-image.outputs.image }}
           tags: ${{ steps.build-image.outputs.tags }}
-          registry: docker.io/${{ secrets.DOCKERUSERNAME }}
+          registry: docker.io/${{ secrets.DOCKER_USERNAME }}
+
+      - name: Sign Docker Hub Image
+        run:  |
+          cosign login docker.io -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          cosign sign -y --key cosign.key docker.io/${{ secrets.DOCKER_USERNAME }}/${{ steps.build-image.outputs.image }}@${DOCKER_TAGS}
+        env:
+          COSIGN_EXPERIMENTAL: false
+          DOCKER_TAGS: ${{ steps.push-to-docker.outputs.digest }}
+
+      - name: Push To GHCR
+        id: push-to-ghcr
+        uses: redhat-actions/push-to-registry@v2
+        with:
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+          image: ${{ steps.build-image.outputs.image }}
+          tags: ${{ steps.build-image.outputs.tags }}
+          registry: ghcr.io/${{ github.repository_owner }}
+
+      - name: Sign GHCR Image
+        run:  |
+          cosign login ghcr.io -u ${{ github.actor }} -p ${{ github.token }}
+          cosign sign -y --key cosign.key ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}@${GHCR_TAGS}
+        env:
+          COSIGN_EXPERIMENTAL: false
+          GHCR_TAGS: ${{ steps.push-to-ghcr.outputs.digest }}
+
+
+      - name: Print image URLs
+        run:  |
+          echo "Image pushed to ${{ steps.push-to-docker.outputs.registry-paths }}"
+          echo "Image pushed to ${{ steps.push-to-ghcr.outputs.registry-paths }}"
