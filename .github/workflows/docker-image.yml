@@ -3,8 +3,6 @@ name: Build and Push to Docker Hub
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   schedule:
     - cron: "30 12 * * 0" # Run once every Sunday
 
@@ -35,7 +33,7 @@ jobs:
           containerfiles: |
             ./docker/Dockerfile
           build-args: |
-            NPM_BUILD=npm ci --omit=dev --frozen-lockfile
+            NPM_BUILD=yarn install --production
 
       - name: Test
         run: |
@@ -59,7 +57,7 @@ jobs:
             ./docker/Dockerfile
           platforms: ${{ env.PLATFORMS }}
           build-args: |
-            NPM_BUILD=npm ci --omit=dev --frozen-lockfile
+            NPM_BUILD=yarn install --production
 
       - name: Push To Docker Hub
         if: github.event_name != 'pull_request'
