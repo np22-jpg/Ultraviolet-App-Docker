@@ -435,9 +435,9 @@ eslint@^8.36.0:
     text-table "^0.2.0"
 
 esotope-hammerhead@^0.6.1:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/esotope-hammerhead/-/esotope-hammerhead-0.6.6.tgz#ef3c7b2b189864ed1646bcb04dd674747f2a612e"
-  integrity sha512-pHTz6hKpCotF/VDMK6UlMo6A1Y8nQsYKuZPtNKWJSKWgvJvB35m91wqeSVz4TlkxTHyIfoeIwMiffdv7Z0JCRA==
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/esotope-hammerhead/-/esotope-hammerhead-0.6.7.tgz#0ef43e8bb3e14b7ddc51ac0f46f213fda88807a3"
+  integrity sha512-nejJRHWvdoymlWnAXJGm8qfaK1hQ7NiMnTQzMSHPUzBrY7Nogu8O0Q6/HcY8AvY58pkkq2loto7oDDZ0zXYQcg==
   dependencies:
     "@types/estree" "0.0.46"
 
@@ -838,9 +838,9 @@ merge-descriptors@1.0.1:
   integrity sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==
 
 meriyah@^4.3.3:
-  version "4.3.8"
-  resolved "https://registry.yarnpkg.com/meriyah/-/meriyah-4.3.8.tgz#8766d05dd89f8a06095bd11260ce98da20f74efb"
-  integrity sha512-b1bddpQZK3FVr/x6KISsfNQdS9jVNgVuFDRi7I9AJbYVggdcA6ij9idboD0aW5ZYELsDMOubi58SDfsW81VakA==
+  version "4.3.9"
+  resolved "https://registry.yarnpkg.com/meriyah/-/meriyah-4.3.9.tgz#2f5a3ec266cccbbe04e7bdc08d1ba7ee3bc38475"
+  integrity sha512-IepKx25Ph/5T67o+Q6Ezrt+repNAcJsydfsNWgelrdOhdcQcs4NI9qPHxB9Qz3WSYpj77hScNJrq5IjdwE1woQ==
 
 methods@~1.1.2:
   version "1.1.2"
