@@ -1,12 +1,13 @@
 FROM  quay.io/sclorg/nodejs-20-c9s@sha256:e63279b01fa149cfeb05cd3f49bf558df8a641bbeab1c3fc3b1c17425711ce68 AS devel
 
+ARG NPM_BUILD="pnpm install --frozen-lockfile"
+
 USER root
 RUN npm install -g pnpm
 
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN $NPM_BUILD
-
 COPY ./ ./
 
 
