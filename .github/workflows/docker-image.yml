@@ -31,7 +31,7 @@ jobs:
           containerfiles: |
             ./docker/Dockerfile
           build-args: |
-            NPM_BUILD=yarn install --production
+            NPM_BUILD=pnpm install --prod
 
       - name: Test
         run: |
@@ -56,7 +56,7 @@ jobs:
             ./docker/Dockerfile
           platforms: ${{ env.PLATFORMS }}
           build-args: |
-            NPM_BUILD=yarn install --production
+            NPM_BUILD=pnpm install --prod
 
       # PUSH
 

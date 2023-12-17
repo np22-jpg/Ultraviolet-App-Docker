@@ -1,5 +1,5 @@
 FROM quay.io/np22-jpg/fedora-npm AS devel
-ARG NPM_BUILD="yarn install"
+ARG NPM_BUILD="pnpm install"
 
 RUN mkdir /app
 WORKDIR /app
