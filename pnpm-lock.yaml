@@ -108,7 +108,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.15.0
+      fastq: 1.16.0
     dev: true
 
   /@titaniumnetwork-dev/ultraviolet@2.0.0:
@@ -116,7 +116,7 @@ packages:
     dependencies:
       '@tomphttp/bare-client': 2.1.0
       css-tree: 2.3.1
-      esotope-hammerhead: 0.6.7
+      esotope-hammerhead: 0.6.8
       events: 3.3.0
       idb: 7.1.1
       meriyah: 4.3.9
@@ -471,8 +471,8 @@ packages:
       - supports-color
     dev: true
 
-  /esotope-hammerhead@0.6.7:
-    resolution: {integrity: sha512-nejJRHWvdoymlWnAXJGm8qfaK1hQ7NiMnTQzMSHPUzBrY7Nogu8O0Q6/HcY8AvY58pkkq2loto7oDDZ0zXYQcg==}
+  /esotope-hammerhead@0.6.8:
+    resolution: {integrity: sha512-2Zhg0c6NfrNA4QT5s4+QG5WJQtq3Se7GonNwtNwfr7sVIo/7L8rirPfh9yyloEmDA7R0yPgD10teFxhf2vWyIw==}
     dependencies:
       '@types/estree': 0.0.46
     dev: false
@@ -571,8 +571,8 @@ packages:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: true
 
-  /fastq@1.15.0:
-    resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
+  /fastq@1.16.0:
+    resolution: {integrity: sha512-ifCoaXsDrsdkWTtiNJX5uzHDsrck5TzfKKDcuFFTIrrc/BS076qgEIfoIy1VeZqViznfKiysPYTh/QeHtnIsYA==}
     dependencies:
       reusify: 1.0.4
     dev: true
