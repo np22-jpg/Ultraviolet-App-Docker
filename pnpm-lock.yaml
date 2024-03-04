@@ -16,7 +16,7 @@ dependencies:
     version: 4.18.3
   ultraviolet-static:
     specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-    version: github.com/titaniumnetwork-dev/Ultraviolet-Static/3d0042015a05a0b031349b73dcbb76f09395cf6a(@titaniumnetwork-dev/ultraviolet@2.0.0)
+    version: github.com/titaniumnetwork-dev/Ultraviolet-Static/8aa210c290263c0103fd4c005707ca209a4a056a(@titaniumnetwork-dev/ultraviolet@2.0.0)
 
 devDependencies:
   eslint:
@@ -1032,7 +1032,7 @@ packages:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
     engines: {node: '>=0.6'}
     dependencies:
-      side-channel: 1.0.5
+      side-channel: 1.0.6
     dev: false
 
   /queue-microtask@1.2.3:
@@ -1150,8 +1150,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /side-channel@1.0.5:
-    resolution: {integrity: sha512-QcgiIWV4WV7qWExbN5llt6frQB/lBven9pqliLXfGPB+K9ZYXxDozp0wLkHS24kWCm+6YXH/f0HhnObZnZOBnQ==}
+  /side-channel@1.0.6:
+    resolution: {integrity: sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.7
@@ -1281,9 +1281,9 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/titaniumnetwork-dev/Ultraviolet-Static/3d0042015a05a0b031349b73dcbb76f09395cf6a(@titaniumnetwork-dev/ultraviolet@2.0.0):
-    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/3d0042015a05a0b031349b73dcbb76f09395cf6a}
-    id: github.com/titaniumnetwork-dev/Ultraviolet-Static/3d0042015a05a0b031349b73dcbb76f09395cf6a
+  github.com/titaniumnetwork-dev/Ultraviolet-Static/8aa210c290263c0103fd4c005707ca209a4a056a(@titaniumnetwork-dev/ultraviolet@2.0.0):
+    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/8aa210c290263c0103fd4c005707ca209a4a056a}
+    id: github.com/titaniumnetwork-dev/Ultraviolet-Static/8aa210c290263c0103fd4c005707ca209a4a056a
     name: ultraviolet-static
     version: 1.0.2
     peerDependencies:
