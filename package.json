@@ -19,7 +19,7 @@
     "@titaniumnetwork-dev/ultraviolet": "2.0.0",
     "@tomphttp/bare-server-node": "^2.0.3",
     "express": "^4.19.2",
-    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static#3d0042015a05a0b031349b73dcbb76f09395cf6a"
+    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static#c2492602685e510ab7c6eea9548ffb4c5fdee1cd"
   },
   "devDependencies": {
     "@microsoft/eslint-formatter-sarif": "3.1.0",
