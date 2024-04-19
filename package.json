@@ -16,14 +16,14 @@
   "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@titaniumnetwork-dev/ultraviolet": "^3.0.0",
+    "@titaniumnetwork-dev/ultraviolet": "2.0.0",
     "@tomphttp/bare-server-node": "^2.0.3",
     "express": "^4.19.2",
-    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static"
+    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static#3d0042015a05a0b031349b73dcbb76f09395cf6a"
   },
   "devDependencies": {
-    "eslint": "9.0.0",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
+    "eslint": "9.0.0",
     "prettier": "3.2.5"
   }
 }
