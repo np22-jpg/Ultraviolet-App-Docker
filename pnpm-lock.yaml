@@ -22,7 +22,7 @@ importers:
         version: 4.19.2
       ultraviolet-static:
         specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd(@titaniumnetwork-dev/ultraviolet@3.0.2)
+        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.0.2)
       wisp-server-node:
         specifier: ^1.0.4
         version: 1.0.4
@@ -34,8 +34,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0
       eslint:
-        specifier: 9.1.0
-        version: 9.1.0
+        specifier: 9.1.1
+        version: 9.1.1
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -578,8 +578,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
 
-  eslint@9.1.0:
-    resolution: {integrity: sha512-1TCBecGFQtItia2o39P7Z4BK1X7ByNPxAiWJvwiyTGcOwYnTiiASgMpNA6a+beu8cFPhEDWvPf6mIlYUJv6sgA==}
+  eslint@9.1.1:
+    resolution: {integrity: sha512-b4cRQ0BeZcSEzPpY2PjFY70VbO32K7BStTGtBsnIGdTSEEQzBi8hPBcGQmTG2zUvFr9uLe0TK42bw8YszuHEqg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
 
@@ -1190,11 +1190,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd:
-    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd}
-    version: 1.0.3
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142:
+    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142}
+    version: 1.0.4
     peerDependencies:
-      '@titaniumnetwork-dev/ultraviolet': ^3.0.0
+      '@titaniumnetwork-dev/ultraviolet': ^3.0.2
 
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -1341,9 +1341,9 @@ snapshots:
       eslint: 8.57.0
       eslint-visitor-keys: 3.4.3
 
-  '@eslint-community/eslint-utils@4.4.0(eslint@9.1.0)':
+  '@eslint-community/eslint-utils@4.4.0(eslint@9.1.1)':
     dependencies:
-      eslint: 9.1.0
+      eslint: 9.1.1
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.10.0': {}
@@ -1782,9 +1782,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint@9.1.0:
+  eslint@9.1.1:
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.1)
       '@eslint-community/regexpp': 4.10.0
       '@eslint/eslintrc': 3.0.2
       '@eslint/js': 9.1.1
@@ -2451,7 +2451,7 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd(@titaniumnetwork-dev/ultraviolet@3.0.2):
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.0.2):
     dependencies:
       '@titaniumnetwork-dev/ultraviolet': 3.0.2
 
