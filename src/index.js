@@ -8,9 +8,10 @@ import { join } from "node:path";
 import { hostname } from "node:os";
 import wisp from "wisp-server-node"
 
-const app = express();
 // Custom MIME type for .cjs files
-app.use(express.static.mime.define({ 'application/javascript': ['cjs'] }))
+express.static.mime.define({ 'application/javascript': ['cjs'] });
+
+const app = express();
 // Load our publicPath first and prioritize it over UV.
 app.use(express.static(publicPath));
 // Load vendor files last.
