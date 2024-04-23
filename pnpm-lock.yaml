@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@mercuryworkshop/bare-mux':
         specifier: ^1.0.7
-        version: 1.0.7
+        version: 1.0.8
       '@mercuryworkshop/epoxy-transport':
         specifier: ^1.1.0
         version: 1.1.0(typescript@5.4.5)
@@ -233,8 +233,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@mercuryworkshop/bare-mux@1.0.7':
-    resolution: {integrity: sha512-VUJvfLxlzpyCuKoGfaI+sUpHEK4tvmvpYvkalU2z604+O9UahfZoc53arO9pm9F3Fnv7ZNloSWMnvSlPAznkoA==}
+  '@mercuryworkshop/bare-mux@1.0.8':
+    resolution: {integrity: sha512-JKBg6oHAPxpsmDBCi4US0Cx8JCc70o09cMc+Ct53nAzPaH+TOk8TsZDhm6TcaJHxvBmN3pG++Ppsdy6ji59fjw==}
 
   '@mercuryworkshop/epoxy-tls@1.5.0':
     resolution: {integrity: sha512-U2TxqKksH8O8ml+7bm3yR4oZ3cnUSSSCO8sRqDWOoVM9B6iYQ0vBF62gfT3djJLiNLnrCQ0rJWI6H1+wzCJo7w==}
@@ -1411,7 +1411,7 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@mercuryworkshop/bare-mux@1.0.7':
+  '@mercuryworkshop/bare-mux@1.0.8':
     dependencies:
       '@types/uuid': 9.0.8
       uuid: 9.0.1
@@ -1510,7 +1510,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.0.2':
     dependencies:
-      '@mercuryworkshop/bare-mux': 1.0.7
+      '@mercuryworkshop/bare-mux': 1.0.8
       crypto-js: 4.2.0
       css-tree: 2.3.1
       esbuild: 0.19.12
