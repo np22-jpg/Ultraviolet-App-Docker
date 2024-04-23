@@ -10,13 +10,7 @@ import wisp from "wisp-server-node"
 
 const app = express();
 // Custom MIME type for .cjs files
-app.use(express.static(publicPath, {
-  setHeaders: (res, path) => {
-    if (path.endsWith('.cjs')) {
-      res.setHeader('Content-Type', 'application/javascript');
-    }
-  }
-}));
+app.use(express.static.mime.define({ 'application/javascript': ['cjs'] }))
 // Load our publicPath first and prioritize it over UV.
 app.use(express.static(publicPath));
 // Load vendor files last.
