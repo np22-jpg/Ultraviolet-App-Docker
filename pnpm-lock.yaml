@@ -22,13 +22,13 @@ importers:
         version: 4.19.2
       ultraviolet-static:
         specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd(@titaniumnetwork-dev/ultraviolet@3.0.2)
+        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.0.2)
       wisp-server-node:
         specifier: ^1.0.4
         version: 1.0.4
       ws:
         specifier: ^8.16.0
-        version: 8.16.0
+        version: 8.17.0
     devDependencies:
       '@microsoft/eslint-formatter-sarif':
         specifier: 3.1.0
@@ -1190,11 +1190,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd:
-    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd}
-    version: 1.0.3
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142:
+    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142}
+    version: 1.0.4
     peerDependencies:
-      '@titaniumnetwork-dev/ultraviolet': ^3.0.0
+      '@titaniumnetwork-dev/ultraviolet': ^3.0.2
 
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -1246,6 +1246,18 @@ packages:
 
   ws@8.16.0:
     resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  ws@8.17.0:
+    resolution: {integrity: sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -2451,7 +2463,7 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/c2492602685e510ab7c6eea9548ffb4c5fdee1cd(@titaniumnetwork-dev/ultraviolet@3.0.2):
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.0.2):
     dependencies:
       '@titaniumnetwork-dev/ultraviolet': 3.0.2
 
@@ -2479,7 +2491,7 @@ snapshots:
 
   wisp-server-node@1.0.4:
     dependencies:
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2499,6 +2511,8 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.16.0: {}
+
+  ws@8.17.0: {}
 
   yallist@4.0.0: {}
 
