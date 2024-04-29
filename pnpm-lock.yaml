@@ -13,7 +13,7 @@ importers:
         version: 1.0.9
       '@mercuryworkshop/epoxy-transport':
         specifier: ^1.1.0
-        version: 1.1.0(typescript@5.4.5)
+        version: 1.1.0(bufferutil@4.0.8)(typescript@5.4.5)(utf-8-validate@6.0.3)
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
         version: 3.0.2
@@ -25,10 +25,10 @@ importers:
         version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.0.2)
       wisp-server-node:
         specifier: ^1.0.4
-        version: 1.0.4
+        version: 1.0.6
       ws:
         specifier: ^8.16.0
-        version: 8.17.0
+        version: 8.17.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
     devDependencies:
       '@microsoft/eslint-formatter-sarif':
         specifier: 3.1.0
@@ -414,6 +414,10 @@ packages:
 
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+
+  bufferutil@4.0.8:
+    resolution: {integrity: sha512-4T53u4PdgsXqKaIctwF8ifXlRTTmEPJ8iEPWFdGZvcf7sbwYo6FKFEX9eNNAnzFZ7EzJAQ3CJeOtCRA4rDp7Pw==}
+    engines: {node: '>=6.14.2'}
 
   builtin-modules@3.3.0:
     resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
@@ -923,6 +927,10 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
+  node-gyp-build@4.8.0:
+    resolution: {integrity: sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og==}
+    hasBin: true
+
   object-inspect@1.13.1:
     resolution: {integrity: sha512-5qoj1RUiKOMsCCNLV1CBiPYE10sziTsnmNxkAI/rZhiD63CF7IqdFGC/XzjWjpSgLf0LxXX3bDFIh0E18f6UhQ==}
 
@@ -1206,6 +1214,10 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
+  utf-8-validate@6.0.3:
+    resolution: {integrity: sha512-uIuGf9TWQ/y+0Lp+KGZCMuJWc3N9BHA+l/UmHd/oUHwJJDeysyTRxNQVkbzsIWfGFbRe3OcgML/i0mvVRPOyDA==}
+    engines: {node: '>=6.14.2'}
+
   utf8@3.0.0:
     resolution: {integrity: sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==}
 
@@ -1226,8 +1238,8 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  wisp-server-node@1.0.4:
-    resolution: {integrity: sha512-23mGc9vkjcqJaRzkrX5QbmMciEgfSWBiBcduNn39ttBQbaVdP050om7FzYzLiv9TYt5OMw5d2KyDxZ7QUErzwg==}
+  wisp-server-node@1.0.6:
+    resolution: {integrity: sha512-zaBmS+J0p6Rg26KkhAedQ41vPesOQ6dB87u26WhyssPpQIfsffYDKn9zshz15miGCR48FN+zWjh60sKoXe7N3Q==}
 
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
@@ -1428,14 +1440,14 @@ snapshots:
 
   '@mercuryworkshop/epoxy-tls@1.5.0': {}
 
-  '@mercuryworkshop/epoxy-transport@1.1.0(typescript@5.4.5)':
+  '@mercuryworkshop/epoxy-transport@1.1.0(bufferutil@4.0.8)(typescript@5.4.5)(utf-8-validate@6.0.3)':
     dependencies:
       '@mercuryworkshop/epoxy-tls': 1.5.0
       esbuild-plugin-umd-wrapper: 2.0.0
       rollup: 4.17.0
       rollup-plugin-node-resolve: 5.2.0(rollup@4.17.0)
       rollup-plugin-typescript2: 0.36.0(rollup@4.17.0)(typescript@5.4.5)
-      ws: 8.16.0
+      ws: 8.16.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - typescript
@@ -1608,6 +1620,10 @@ snapshots:
   brace-expansion@2.0.1:
     dependencies:
       balanced-match: 1.0.2
+
+  bufferutil@4.0.8:
+    dependencies:
+      node-gyp-build: 4.8.0
 
   builtin-modules@3.3.0: {}
 
@@ -2184,6 +2200,8 @@ snapshots:
 
   negotiator@0.6.3: {}
 
+  node-gyp-build@4.8.0: {}
+
   object-inspect@1.13.1: {}
 
   on-finished@2.4.1:
@@ -2475,6 +2493,10 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
+  utf-8-validate@6.0.3:
+    dependencies:
+      node-gyp-build: 4.8.0
+
   utf8@3.0.0: {}
 
   utils-merge@1.0.1: {}
@@ -2487,12 +2509,11 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  wisp-server-node@1.0.4:
+  wisp-server-node@1.0.6:
     dependencies:
-      ws: 8.17.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
+      bufferutil: 4.0.8
+      utf-8-validate: 6.0.3
+      ws: 8.17.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
 
   word-wrap@1.2.5: {}
 
@@ -2510,9 +2531,15 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  ws@8.16.0: {}
+  ws@8.16.0(bufferutil@4.0.8)(utf-8-validate@6.0.3):
+    optionalDependencies:
+      bufferutil: 4.0.8
+      utf-8-validate: 6.0.3
 
-  ws@8.17.0: {}
+  ws@8.17.0(bufferutil@4.0.8)(utf-8-validate@6.0.3):
+    optionalDependencies:
+      bufferutil: 4.0.8
+      utf-8-validate: 6.0.3
 
   yallist@4.0.0: {}
 
