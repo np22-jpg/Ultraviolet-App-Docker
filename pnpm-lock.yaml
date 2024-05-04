@@ -16,13 +16,13 @@ importers:
         version: 1.1.0(bufferutil@4.0.8)(typescript@5.4.5)(utf-8-validate@6.0.3)
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
-        version: 3.1.0
+        version: 3.1.1
       express:
         specifier: ^4.19.2
         version: 4.19.2
       ultraviolet-static:
         specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.1.0)
+        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.1.1)
       wisp-server-node:
         specifier: ^1.0.4
         version: 1.1.0
@@ -196,8 +196,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@titaniumnetwork-dev/ultraviolet@3.1.0':
-    resolution: {integrity: sha512-OVODADAQ4EhcVlL2B815mtRX6AqXodz/25RLLQ+KnG7c4U1Rx2C7+1qLbJupkx4H+FSvtG6iFhsKeS0gxUHnPg==}
+  '@titaniumnetwork-dev/ultraviolet@3.1.1':
+    resolution: {integrity: sha512-O5Y5rLpEJdINqhYTqByBYUfW9lcKSM3abWgv0oyE8KWj7b16xdQrwCB2hKiSZbiZPRWMhJN6yVSKbXm7h53nUA==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1175,7 +1175,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.17.0':
     optional: true
 
-  '@titaniumnetwork-dev/ultraviolet@3.1.0': {}
+  '@titaniumnetwork-dev/ultraviolet@3.1.1': {}
 
   '@types/estree@1.0.5': {}
 
@@ -1984,9 +1984,9 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.1.0):
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/006001cbfc8db1091369f1d93bbe535db80aa142(@titaniumnetwork-dev/ultraviolet@3.1.1):
     dependencies:
-      '@titaniumnetwork-dev/ultraviolet': 3.1.0
+      '@titaniumnetwork-dev/ultraviolet': 3.1.1
 
   undici-types@5.26.5: {}
 
