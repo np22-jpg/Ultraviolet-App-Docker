@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@mercuryworkshop/bare-mux':
         specifier: ^1.0.7
-        version: 1.0.9
+        version: 1.1.0
       '@mercuryworkshop/epoxy-transport':
         specifier: ^1.1.0
         version: 1.1.0(bufferutil@4.0.8)(typescript@5.4.5)(utf-8-validate@6.0.3)
@@ -87,8 +87,8 @@ packages:
     resolution: {integrity: sha512-X38nUbachlb01YMlvPFojKoiXq+LzZvuSce70KPMPdeM1Rj03k4dR7lDslhbqXn3Ang4EU3+EAmwEAsbrjHW3g==}
     engines: {node: '>=18.18'}
 
-  '@mercuryworkshop/bare-mux@1.0.9':
-    resolution: {integrity: sha512-GEK61+RV8RYXKZ1oLiP9dUcZJcVBQSbJi68QrXQbl5LNZlK8M+x0wyChrRSzTEYmEK0cHFdvrY+0HXdXYaF2yA==}
+  '@mercuryworkshop/bare-mux@1.1.0':
+    resolution: {integrity: sha512-E+d2GZEdbnUrGTx8AOrDVe0d7Cxz57rjDWBn9xAHH65G68PQkVY17j0EXAurFXF/sJzbjLTPcJZvHZQA2P/IVQ==}
 
   '@mercuryworkshop/epoxy-tls@1.5.0':
     resolution: {integrity: sha512-U2TxqKksH8O8ml+7bm3yR4oZ3cnUSSSCO8sRqDWOoVM9B6iYQ0vBF62gfT3djJLiNLnrCQ0rJWI6H1+wzCJo7w==}
@@ -1081,7 +1081,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.2.3': {}
 
-  '@mercuryworkshop/bare-mux@1.0.9':
+  '@mercuryworkshop/bare-mux@1.1.0':
     dependencies:
       '@types/uuid': 9.0.8
       uuid: 9.0.1
