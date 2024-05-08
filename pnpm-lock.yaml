@@ -16,13 +16,13 @@ importers:
         version: 1.1.0(bufferutil@4.0.8)(typescript@5.4.5)(utf-8-validate@6.0.3)
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
-        version: 3.1.1
+        version: 3.1.2
       express:
         specifier: ^4.19.2
         version: 4.19.2
       ultraviolet-static:
         specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/4c3508e3a5611f95d892dddcb58eb86e0d392ab5(@titaniumnetwork-dev/ultraviolet@3.1.1)
+        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4
       wisp-server-node:
         specifier: ^1.0.4
         version: 1.1.0
@@ -196,8 +196,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@titaniumnetwork-dev/ultraviolet@3.1.1':
-    resolution: {integrity: sha512-O5Y5rLpEJdINqhYTqByBYUfW9lcKSM3abWgv0oyE8KWj7b16xdQrwCB2hKiSZbiZPRWMhJN6yVSKbXm7h53nUA==}
+  '@titaniumnetwork-dev/ultraviolet@3.1.2':
+    resolution: {integrity: sha512-PvhyL9IQtSwHTVRRpNGn+YCWkSzP7JEk0wX7M5YfUSobBicoRLOJhCC4u6T9qh/vObDpLDE3TfP4GKqMTSa2rw==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -928,11 +928,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/4c3508e3a5611f95d892dddcb58eb86e0d392ab5:
-    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/4c3508e3a5611f95d892dddcb58eb86e0d392ab5}
-    version: 1.0.4
-    peerDependencies:
-      '@titaniumnetwork-dev/ultraviolet': ^3.1.1
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4:
+    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4}
+    version: 1.0.5
 
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -1175,7 +1173,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.17.2':
     optional: true
 
-  '@titaniumnetwork-dev/ultraviolet@3.1.1': {}
+  '@titaniumnetwork-dev/ultraviolet@3.1.2': {}
 
   '@types/estree@1.0.5': {}
 
@@ -1984,9 +1982,7 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/4c3508e3a5611f95d892dddcb58eb86e0d392ab5(@titaniumnetwork-dev/ultraviolet@3.1.1):
-    dependencies:
-      '@titaniumnetwork-dev/ultraviolet': 3.1.1
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4: {}
 
   undici-types@5.26.5: {}
 
