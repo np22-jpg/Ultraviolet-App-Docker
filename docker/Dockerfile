@@ -11,7 +11,7 @@ RUN $NPM_BUILD
 COPY ./ ./
 
 
-FROM  quay.io/sclorg/nodejs-20-minimal-c9s@sha256:16e6788877c21a0188463c1f5598c8b59b7d467b7a2d98b46ba09ac494b0b1ac AS release
+FROM  quay.io/sclorg/nodejs-20-minimal-c9s@sha256:8877e65376ab222323dfca3475b6b327bddeff7292893adda656c5a29f81b74a AS release
 
 LABEL maintainer="TitaniumNetwork Ultraviolet Team"
 LABEL summary="Ultraviolet Proxy Image"
