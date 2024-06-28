@@ -12,8 +12,8 @@ importers:
         specifier: ^1.0.7
         version: 1.1.1
       '@mercuryworkshop/epoxy-transport':
-        specifier: ^1.1.0
-        version: 1.1.0(bufferutil@4.0.8)(typescript@5.5.2)(utf-8-validate@6.0.4)
+        specifier: ^2.0.0
+        version: 2.0.1(bufferutil@4.0.8)(typescript@5.5.2)(utf-8-validate@6.0.4)
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
         version: 3.1.2
@@ -96,11 +96,11 @@ packages:
   '@mercuryworkshop/bare-mux@1.1.1':
     resolution: {integrity: sha512-qKOnTsIjwv4wBvToek3Jm+y3F/BcFtjy6HOsdyzIUemCOw51kodzRsvWvU9Pf/JYDVPV8or0zbsg+qOKtasjhA==}
 
-  '@mercuryworkshop/epoxy-tls@1.5.0':
-    resolution: {integrity: sha512-U2TxqKksH8O8ml+7bm3yR4oZ3cnUSSSCO8sRqDWOoVM9B6iYQ0vBF62gfT3djJLiNLnrCQ0rJWI6H1+wzCJo7w==}
+  '@mercuryworkshop/epoxy-tls@2.0.0-3':
+    resolution: {integrity: sha512-iC5CViTh2xn44xtjvDW4YW9qoeoJcCBOqcNmffBx3RHdK7FAzAWFHLTUBtdlnMVv6cjYZtV+eUTzxyreqlgOVA==}
 
-  '@mercuryworkshop/epoxy-transport@1.1.0':
-    resolution: {integrity: sha512-JVdKr+u53qu3GQyehZDWRfWV1UWct2fAtU2/50plFl9TLzy2rPLUHqyHTmyAuErNS6SP2uZ9BlgMz6FN4PlpVg==}
+  '@mercuryworkshop/epoxy-transport@2.0.1':
+    resolution: {integrity: sha512-iGuH/CT5hCVRYBa+5ZrlTG0DWII9VOCMHnmv9CPFLM17obE84y9EUXpTp9hXdfENnuAcNzQVPizjwVas7HiYQA==}
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     resolution: {integrity: sha512-/mn4UXziHzGXnKCg+r8HGgPy+w4RzpgdoqFuqaKOqUVBT5x2CygGefIrO4SusaY7t0C4gyIWMNu6YQT6Jw64Cw==}
@@ -1090,11 +1090,11 @@ snapshots:
       '@types/uuid': 9.0.8
       uuid: 9.0.1
 
-  '@mercuryworkshop/epoxy-tls@1.5.0': {}
+  '@mercuryworkshop/epoxy-tls@2.0.0-3': {}
 
-  '@mercuryworkshop/epoxy-transport@1.1.0(bufferutil@4.0.8)(typescript@5.5.2)(utf-8-validate@6.0.4)':
+  '@mercuryworkshop/epoxy-transport@2.0.1(bufferutil@4.0.8)(typescript@5.5.2)(utf-8-validate@6.0.4)':
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 1.5.0
+      '@mercuryworkshop/epoxy-tls': 2.0.0-3
       esbuild-plugin-umd-wrapper: 2.0.0
       rollup: 4.18.0
       rollup-plugin-node-resolve: 5.2.0(rollup@4.18.0)
