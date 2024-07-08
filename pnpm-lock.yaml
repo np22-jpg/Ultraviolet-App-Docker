@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@mercuryworkshop/bare-mux':
-        specifier: ^1.0.7
-        version: 1.1.4
+        specifier: ^2.0.0
+        version: 2.0.0
       '@mercuryworkshop/epoxy-transport':
         specifier: ^2.0.0
         version: 2.0.6(typescript@5.5.3)
@@ -22,7 +22,7 @@ importers:
         version: 4.19.2
       ultraviolet-static:
         specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4
+        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/1748d23b09e67ad2598c076dd8bddc66c649d861
       wisp-server-node:
         specifier: ^1.0.4
         version: 1.1.0
@@ -93,8 +93,8 @@ packages:
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
 
-  '@mercuryworkshop/bare-mux@1.1.4':
-    resolution: {integrity: sha512-mJPezqEpiKTCs+wu/3TowilnVXQgFs4SqoQnnbCbOc5cV6bDggaolKkyYjDnmOB9t/nptIIXDWDB31oS9vX9kA==}
+  '@mercuryworkshop/bare-mux@2.0.0':
+    resolution: {integrity: sha512-SKhWdP1T5QxPXHFxblc0vdXXrRF//e+Q2XsFY0G+EvKh8Md7UTLafZQcdOgM1KBpp9IybVKizIJMwnZoK5iMzg==}
 
   '@mercuryworkshop/epoxy-tls@2.0.3-5':
     resolution: {integrity: sha512-qlZm9n7uexFr5GMRaRTa5R+lYPUmVMv3aHbXQsSAC7VyDNMMhTdee1gWQKO/ThWaYk4MmZ+xvjWP7GWZDGERRQ==}
@@ -213,9 +213,6 @@ packages:
 
   '@types/resolve@0.0.8':
     resolution: {integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==}
-
-  '@types/uuid@9.0.8':
-    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
@@ -935,8 +932,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4:
-    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4}
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/1748d23b09e67ad2598c076dd8bddc66c649d861:
+    resolution: {tarball: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/1748d23b09e67ad2598c076dd8bddc66c649d861}
     version: 1.0.5
 
   undici-types@5.26.5:
@@ -963,10 +960,6 @@ packages:
   utils-merge@1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
-
-  uuid@9.0.1:
-    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
-    hasBin: true
 
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
@@ -1073,10 +1066,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@mercuryworkshop/bare-mux@1.1.4':
-    dependencies:
-      '@types/uuid': 9.0.8
-      uuid: 9.0.1
+  '@mercuryworkshop/bare-mux@2.0.0': {}
 
   '@mercuryworkshop/epoxy-tls@2.0.3-5': {}
 
@@ -1175,8 +1165,6 @@ snapshots:
   '@types/resolve@0.0.8':
     dependencies:
       '@types/node': 20.14.10
-
-  '@types/uuid@9.0.8': {}
 
   '@ungap/structured-clone@1.2.0': {}
 
@@ -1967,7 +1955,7 @@ snapshots:
 
   typescript@5.5.3: {}
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/a2237342473384456a07169c34b15613bdb5fad4: {}
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/1748d23b09e67ad2598c076dd8bddc66c649d861: {}
 
   undici-types@5.26.5: {}
 
@@ -1986,8 +1974,6 @@ snapshots:
   utf8@3.0.0: {}
 
   utils-merge@1.0.1: {}
-
-  uuid@9.0.1: {}
 
   vary@1.1.2: {}
 
