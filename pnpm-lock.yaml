@@ -16,7 +16,7 @@ importers:
         version: 2.1.0(typescript@5.5.3)
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
-        version: 3.1.5
+        version: 3.2.0
       express:
         specifier: ^4.19.2
         version: 4.19.2
@@ -202,8 +202,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@titaniumnetwork-dev/ultraviolet@3.1.5':
-    resolution: {integrity: sha512-/cSPKumK/Spcv8EiMG/iv+ZJlgG7h4xNzd8KqB78CMfgUkshKOV2ZTaBfimVAu2XDS2rHer7QREY4ukJ2Os8fg==}
+  '@titaniumnetwork-dev/ultraviolet@3.2.0':
+    resolution: {integrity: sha512-Tz7VMOK3UbQRCdKPm/UHdIOIMvF93/pGntk6fWFPiEcTG4YUg2T0rBKsa8mvwY31IYEirY4JLglgG7Ogrf8p/w==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1154,7 +1154,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.1':
     optional: true
 
-  '@titaniumnetwork-dev/ultraviolet@3.1.5': {}
+  '@titaniumnetwork-dev/ultraviolet@3.2.0': {}
 
   '@types/estree@1.0.5': {}
 
