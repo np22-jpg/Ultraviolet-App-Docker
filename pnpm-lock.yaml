@@ -13,7 +13,7 @@ importers:
         version: 2.0.0
       '@mercuryworkshop/epoxy-transport':
         specifier: ^2.0.0
-        version: 2.1.0(typescript@5.5.3)
+        version: 2.1.1(typescript@5.5.3)
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
         version: 3.2.0
@@ -99,8 +99,8 @@ packages:
   '@mercuryworkshop/epoxy-tls@2.0.4-2':
     resolution: {integrity: sha512-I/lHt4Q49SB+p5yurQtND6HngqkIYucaA2iz5Yq/gamG+X6ZffqcheNHgNAT7/Hqyzqbm8aWpoHSbFQysfkw5A==}
 
-  '@mercuryworkshop/epoxy-transport@2.1.0':
-    resolution: {integrity: sha512-W+pbUsSlK0A7fVGKRgCUda1I16WTcQPMpdAo5GADHmAHb5LuYxAuHYZHs2Hwkz4nQjayz3frBgxMGcvBLcjU1A==}
+  '@mercuryworkshop/epoxy-transport@2.1.1':
+    resolution: {integrity: sha512-hs3Za/PbAf/p9iQUxynj5btoW7tEBhidQtz/k7dnCxKeIFDFv+YCw0TCtog2zvU293sG7qIzBZfw7gTxtWEzdA==}
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     resolution: {integrity: sha512-/mn4UXziHzGXnKCg+r8HGgPy+w4RzpgdoqFuqaKOqUVBT5x2CygGefIrO4SusaY7t0C4gyIWMNu6YQT6Jw64Cw==}
@@ -1070,7 +1070,7 @@ snapshots:
 
   '@mercuryworkshop/epoxy-tls@2.0.4-2': {}
 
-  '@mercuryworkshop/epoxy-transport@2.1.0(typescript@5.5.3)':
+  '@mercuryworkshop/epoxy-transport@2.1.1(typescript@5.5.3)':
     dependencies:
       '@mercuryworkshop/epoxy-tls': 2.0.4-2
       esbuild-plugin-umd-wrapper: 2.0.0
