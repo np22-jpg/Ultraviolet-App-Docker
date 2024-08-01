@@ -16,7 +16,7 @@ importers:
         version: 2.1.5
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
-        version: 3.2.6
+        version: 3.2.7
       express:
         specifier: ^4.19.2
         version: 4.19.2
@@ -118,8 +118,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@titaniumnetwork-dev/ultraviolet@3.2.6':
-    resolution: {integrity: sha512-kMyUdXBWKIOjO/0sGlj/uTNjNK2/3dn+gnhlBTs/CB3EPUPD+DAKnH99yYqBs0R+YE0Hjm54pCyBHY7ztq6iOQ==}
+  '@titaniumnetwork-dev/ultraviolet@3.2.7':
+    resolution: {integrity: sha512-leR8Cxtgld9NykRbEbYejbD85dOLh0rqQe6tfcsaFEBIChWG9QF10x1qoJBQ3wXSvZ+wqh3cBNYrucYpHOWpUA==}
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
@@ -873,7 +873,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@titaniumnetwork-dev/ultraviolet@3.2.6': {}
+  '@titaniumnetwork-dev/ultraviolet@3.2.7': {}
 
   '@ungap/structured-clone@1.2.0': {}
 
