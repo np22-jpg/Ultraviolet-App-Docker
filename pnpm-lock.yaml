@@ -25,7 +25,7 @@ importers:
         version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/d9a30997be87d0f25f36c85e2fc851528d8f8e23
       wisp-server-node:
         specifier: ^1.0.4
-        version: 1.1.3
+        version: 1.1.4
       ws:
         specifier: ^8.16.0
         version: 8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4)
@@ -754,8 +754,8 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  wisp-server-node@1.1.3:
-    resolution: {integrity: sha512-q44uIL68WhOnSEE1HJvMwXVZ6OzFIK+PBQfv04cr3svfOpbZfsuzLiYUz12P57PkxZxfNsjsYqrXjvf55P8S4Q==}
+  wisp-server-node@1.1.4:
+    resolution: {integrity: sha512-RIG24h1Ssc//Fqya4mzR3kQNm824QIVVodXp0ZJ0n4RxIAS5bhEnJNfPt/safNGyDbcnNd6L6Vh7XTDvfK/qHw==}
 
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
@@ -1563,7 +1563,7 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  wisp-server-node@1.1.3:
+  wisp-server-node@1.1.4:
     dependencies:
       bufferutil: 4.0.8
       utf-8-validate: 6.0.4
