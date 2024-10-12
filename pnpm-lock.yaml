@@ -13,7 +13,7 @@ importers:
         version: 2.1.2
       '@mercuryworkshop/epoxy-transport':
         specifier: ^2.0.0
-        version: 2.1.15
+        version: 2.1.16
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
         version: 3.2.7
@@ -112,11 +112,11 @@ packages:
   '@mercuryworkshop/bare-mux@2.1.2':
     resolution: {integrity: sha512-RKjvM+3Ly2QK5U+AVyMSeJPyaU+xEfjoJDf97XJ9lohs9/JrbfFWeO7Nf65qfL+3WEAjvGzi/oWdN90rWKh1bw==}
 
-  '@mercuryworkshop/epoxy-tls@2.1.7-1':
-    resolution: {integrity: sha512-r37GCFjqXZgjt9Mc/b6RU53uhumTTKlhi3tjdCLxp4DplUMPpukXV9LO9k+egzrkKRwO5fh0naM45raeMT36MQ==}
+  '@mercuryworkshop/epoxy-tls@2.1.8-1':
+    resolution: {integrity: sha512-om8EtaoGhghLWFFzueAAUBgKzBzCJzkrqnT5xCyQfJuXRiyBb1aaKejjUWpHF6knEjNVyKejc6kAEW6gX2SA0A==}
 
-  '@mercuryworkshop/epoxy-transport@2.1.15':
-    resolution: {integrity: sha512-142ZUwziwPa7KhENGVUJIWu4NbOsuLgO5oSM7aXOK7WquC4fJzTcQ/JMRDbLSYR1yY6aBCiTHkwM9X5YYA96Qw==}
+  '@mercuryworkshop/epoxy-transport@2.1.16':
+    resolution: {integrity: sha512-3DQk+5inJt9dVdaz9D6s+BWJVAzePOBXSOmyQ1BbwVsY1KCpEOkmPoeEHK7MBx28kDPCfDICHNiI2YyrUqS3Fw==}
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     resolution: {integrity: sha512-/mn4UXziHzGXnKCg+r8HGgPy+w4RzpgdoqFuqaKOqUVBT5x2CygGefIrO4SusaY7t0C4gyIWMNu6YQT6Jw64Cw==}
@@ -888,11 +888,11 @@ snapshots:
 
   '@mercuryworkshop/bare-mux@2.1.2': {}
 
-  '@mercuryworkshop/epoxy-tls@2.1.7-1': {}
+  '@mercuryworkshop/epoxy-tls@2.1.8-1': {}
 
-  '@mercuryworkshop/epoxy-transport@2.1.15':
+  '@mercuryworkshop/epoxy-transport@2.1.16':
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 2.1.7-1
+      '@mercuryworkshop/epoxy-tls': 2.1.8-1
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     dependencies:
