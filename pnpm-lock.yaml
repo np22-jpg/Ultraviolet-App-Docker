@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@mercuryworkshop/bare-mux':
         specifier: ^2.0.0
-        version: 2.1.5
+        version: 2.1.6
       '@mercuryworkshop/epoxy-transport':
         specifier: ^2.0.0
-        version: 2.1.21
+        version: 2.1.23
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
         version: 3.2.7
@@ -80,8 +80,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/plugin-kit@0.2.0':
-    resolution: {integrity: sha512-vH9PiIMMwvhCx31Af3HiGzsVNULDbyVkHXwlemn/B0TFj/00ho3y55efXrUZTfQipxoHC5u4xq6zblww1zm1Ig==}
+  '@eslint/plugin-kit@0.2.1':
+    resolution: {integrity: sha512-HFZ4Mp26nbWk9d/BpvP0YNL6W4UoZF0VFcTw/aPPA8RpOxeFQgK+ClABGgAUXs9Y/RGX/l1vOmrqz1MQt9MNuw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@humanfs/core@0.19.0':
@@ -109,14 +109,14 @@ packages:
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==}
     engines: {node: '>=18.18'}
 
-  '@mercuryworkshop/bare-mux@2.1.5':
-    resolution: {integrity: sha512-mZ805vw30y2xH7bRfXgEGDLez3Q6p1v4tgxJQmnwA9OJu2Rd8VvbryB6U07EXFmJsIIoX3+VQuieBXoy+yCHIQ==}
+  '@mercuryworkshop/bare-mux@2.1.6':
+    resolution: {integrity: sha512-SMpPwHrRjeqBfuh5N9SKD2G7uzfQiOeiENcYjb0BYTpOEOFvoPDhjSppSZMSkN1maJJ1NNtCRv9Qb+uCeJWwgw==}
 
-  '@mercuryworkshop/epoxy-tls@2.1.11-1':
-    resolution: {integrity: sha512-hnW4VMDRnBkmysD+UC9nl6xfEzgVHmlAdyYV3biHqBsV4fwxmYHm6aQbg2tIF2Ip0WibQGYxl16RshV5wo6TBw==}
+  '@mercuryworkshop/epoxy-tls@2.1.13-1':
+    resolution: {integrity: sha512-vYOMX0rts+f2CFwB2KgcXphkVBP9gJpaa1k9H/CHtshzeTnxZO43O1fj2NSf/hkKCVGEIUYjQVCZjUiKGySs7A==}
 
-  '@mercuryworkshop/epoxy-transport@2.1.21':
-    resolution: {integrity: sha512-zh1LwC6pXvlkakKBDYQHlWk4zaiRtMBWnh4k/3VA/A3s8eZ8JoohibUMH3LG8JQ8DDdG3MwwRJ3k7fWgHQoOpg==}
+  '@mercuryworkshop/epoxy-transport@2.1.23':
+    resolution: {integrity: sha512-Oba6GH1vJoFzTNbO/M7sAm098EkLVtUjWWfsr8ymg8imBGAYX+xj7oe1H8DYrCTtcUHkD5b1/pSD9poR1aeKmQ==}
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     resolution: {integrity: sha512-/mn4UXziHzGXnKCg+r8HGgPy+w4RzpgdoqFuqaKOqUVBT5x2CygGefIrO4SusaY7t0C4gyIWMNu6YQT6Jw64Cw==}
@@ -155,8 +155,8 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn@8.12.1:
-    resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
+  acorn@8.13.0:
+    resolution: {integrity: sha512-8zSiw54Oxrdym50NlZ9sUusyO1Z1ZchgRLWRaK6c86XJFClyCgFKetdowBg5bKxyp/u+CDBJG4Mpp0m3HLZl9w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -861,7 +861,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@eslint/plugin-kit@0.2.0':
+  '@eslint/plugin-kit@0.2.1':
     dependencies:
       levn: 0.4.1
 
@@ -886,13 +886,13 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.1': {}
 
-  '@mercuryworkshop/bare-mux@2.1.5': {}
+  '@mercuryworkshop/bare-mux@2.1.6': {}
 
-  '@mercuryworkshop/epoxy-tls@2.1.11-1': {}
+  '@mercuryworkshop/epoxy-tls@2.1.13-1': {}
 
-  '@mercuryworkshop/epoxy-transport@2.1.21':
+  '@mercuryworkshop/epoxy-transport@2.1.23':
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 2.1.11-1
+      '@mercuryworkshop/epoxy-tls': 2.1.13-1
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     dependencies:
@@ -928,11 +928,11 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
-  acorn-jsx@5.3.2(acorn@8.12.1):
+  acorn-jsx@5.3.2(acorn@8.13.0):
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.13.0
 
-  acorn@8.12.1: {}
+  acorn@8.13.0: {}
 
   ajv@6.12.6:
     dependencies:
@@ -1125,7 +1125,7 @@ snapshots:
       '@eslint/core': 0.7.0
       '@eslint/eslintrc': 3.1.0
       '@eslint/js': 9.13.0
-      '@eslint/plugin-kit': 0.2.0
+      '@eslint/plugin-kit': 0.2.1
       '@humanfs/node': 0.16.5
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.3.1
@@ -1159,14 +1159,14 @@ snapshots:
 
   espree@10.2.0:
     dependencies:
-      acorn: 8.12.1
-      acorn-jsx: 5.3.2(acorn@8.12.1)
+      acorn: 8.13.0
+      acorn-jsx: 5.3.2(acorn@8.13.0)
       eslint-visitor-keys: 4.1.0
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.12.1
-      acorn-jsx: 5.3.2(acorn@8.12.1)
+      acorn: 8.13.0
+      acorn-jsx: 5.3.2(acorn@8.13.0)
       eslint-visitor-keys: 3.4.3
 
   esquery@1.6.0:
