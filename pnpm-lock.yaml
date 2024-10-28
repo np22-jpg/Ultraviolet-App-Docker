@@ -13,7 +13,7 @@ importers:
         version: 2.1.6
       '@mercuryworkshop/epoxy-transport':
         specifier: ^2.0.0
-        version: 2.1.25
+        version: 2.1.26
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
         version: 3.2.9
@@ -112,11 +112,11 @@ packages:
   '@mercuryworkshop/bare-mux@2.1.6':
     resolution: {integrity: sha512-SMpPwHrRjeqBfuh5N9SKD2G7uzfQiOeiENcYjb0BYTpOEOFvoPDhjSppSZMSkN1maJJ1NNtCRv9Qb+uCeJWwgw==}
 
-  '@mercuryworkshop/epoxy-tls@2.1.14-1':
-    resolution: {integrity: sha512-JbFGlbBnJM9++2duCsttWxd8ax3JdqN2rNR4Gibvkyi0nZkRQSURplS/GxSF6F7b8PsrNEwndtq0Z1JlDuRDqQ==}
+  '@mercuryworkshop/epoxy-tls@2.1.15-1':
+    resolution: {integrity: sha512-XcagLkLBIi+rjgr4WcI37m5EJ+FZbURDusnBvphtpQbcSVs5D/FwzUgVBLw92U6+Uragt0HC9POZ2UWmYkt0aA==}
 
-  '@mercuryworkshop/epoxy-transport@2.1.25':
-    resolution: {integrity: sha512-vPlHDDG/h2K6WgwV/zKEdxauSCn/KfRHrJGHHK41zJw+oysoZPSTXU666Hf6SHVBv6L3zXpWmXeIuGJUUGJ9Fg==}
+  '@mercuryworkshop/epoxy-transport@2.1.26':
+    resolution: {integrity: sha512-ihQ2aL3MB4ZJM5tGHVxYLMY9m+jZmnSvMP32Lu7u9eYqzP96h6JJrwgqMSqHoiavOmEDV5/b8uJbuWeJbfgmcA==}
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     resolution: {integrity: sha512-/mn4UXziHzGXnKCg+r8HGgPy+w4RzpgdoqFuqaKOqUVBT5x2CygGefIrO4SusaY7t0C4gyIWMNu6YQT6Jw64Cw==}
@@ -136,6 +136,7 @@ packages:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.9':
     resolution: {integrity: sha512-k2hvTe/SxnNRYz0M/stoVtLDK9YBlvOA1tzDZMASsyIjZVSIBD9wCBBiG4M+ZR3NxO/rWO5moXhADMaTputoug==}
+    deprecated: this version of the package is broken, please update to 3.2.10
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -913,11 +914,11 @@ snapshots:
 
   '@mercuryworkshop/bare-mux@2.1.6': {}
 
-  '@mercuryworkshop/epoxy-tls@2.1.14-1': {}
+  '@mercuryworkshop/epoxy-tls@2.1.15-1': {}
 
-  '@mercuryworkshop/epoxy-transport@2.1.25':
+  '@mercuryworkshop/epoxy-transport@2.1.26':
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 2.1.14-1
+      '@mercuryworkshop/epoxy-tls': 2.1.15-1
 
   '@microsoft/eslint-formatter-sarif@3.1.0':
     dependencies:
