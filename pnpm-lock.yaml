@@ -16,7 +16,7 @@ importers:
         version: 2.1.26
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.0.2
-        version: 3.2.9
+        version: 3.2.10
       express:
         specifier: ^4.19.2
         version: 4.21.1
@@ -134,9 +134,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@titaniumnetwork-dev/ultraviolet@3.2.9':
-    resolution: {integrity: sha512-k2hvTe/SxnNRYz0M/stoVtLDK9YBlvOA1tzDZMASsyIjZVSIBD9wCBBiG4M+ZR3NxO/rWO5moXhADMaTputoug==}
-    deprecated: this version of the package is broken, please update to 3.2.10
+  '@titaniumnetwork-dev/ultraviolet@3.2.10':
+    resolution: {integrity: sha512-Sf0Leb+NMEwFA8EQxCLW/wJW6TNR/EITBPKHadiq4DNOEbgXJdmIW8PKmsNkyOvAIN6o2peE86S6qxQt6ft1Ew==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -941,7 +940,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@titaniumnetwork-dev/ultraviolet@3.2.9':
+  '@titaniumnetwork-dev/ultraviolet@3.2.10':
     dependencies:
       '@mercuryworkshop/bare-mux': 2.1.6
       astring: 1.9.0
