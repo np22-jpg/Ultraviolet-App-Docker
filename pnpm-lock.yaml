@@ -603,8 +603,8 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
-  node-gyp-build@4.8.2:
-    resolution: {integrity: sha512-IRUxE4BVsHWXkV/SFOut4qTlagw2aM8T5/vnTsmrHJvVoKueJHRc/JaFND7QDDc61kLYUJ6qlZM3sqTSyx2dTw==}
+  node-gyp-build@4.8.3:
+    resolution: {integrity: sha512-EMS95CMJzdoSKoIiXo8pxKoL8DYxwIZXYlLmgPb8KUv794abpnLK6ynsCAWNliOjREKruYKdzbh76HHYUHX7nw==}
     hasBin: true
 
   object-inspect@1.13.3:
@@ -1018,7 +1018,7 @@ snapshots:
 
   bufferutil@4.0.8:
     dependencies:
-      node-gyp-build: 4.8.2
+      node-gyp-build: 4.8.3
 
   bytes@3.1.2: {}
 
@@ -1465,7 +1465,7 @@ snapshots:
 
   negotiator@0.6.3: {}
 
-  node-gyp-build@4.8.2: {}
+  node-gyp-build@4.8.3: {}
 
   object-inspect@1.13.3: {}
 
@@ -1644,7 +1644,7 @@ snapshots:
 
   utf-8-validate@6.0.5:
     dependencies:
-      node-gyp-build: 4.8.2
+      node-gyp-build: 4.8.3
 
   utf8@3.0.0: {}
 
