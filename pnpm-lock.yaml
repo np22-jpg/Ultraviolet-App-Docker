@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@mercuryworkshop/bare-mux':
         specifier: ^2.0.0
-        version: 2.1.6
+        version: 2.1.7
       '@mercuryworkshop/epoxy-transport':
         specifier: ^2.0.0
         version: 2.1.26
@@ -113,8 +113,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@mercuryworkshop/bare-mux@2.1.6':
-    resolution: {integrity: sha512-SMpPwHrRjeqBfuh5N9SKD2G7uzfQiOeiENcYjb0BYTpOEOFvoPDhjSppSZMSkN1maJJ1NNtCRv9Qb+uCeJWwgw==}
+  '@mercuryworkshop/bare-mux@2.1.7':
+    resolution: {integrity: sha512-BUamyc7jsIFbWQVVWjVjaD+Wot77EPwolkrbP3UuIs6QeHR1RY52+IR2fq3GkRAbOOrAZNT7EgZSsupkh1NowQ==}
 
   '@mercuryworkshop/epoxy-tls@2.1.15-1':
     resolution: {integrity: sha512-XcagLkLBIi+rjgr4WcI37m5EJ+FZbURDusnBvphtpQbcSVs5D/FwzUgVBLw92U6+Uragt0HC9POZ2UWmYkt0aA==}
@@ -917,7 +917,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@mercuryworkshop/bare-mux@2.1.6': {}
+  '@mercuryworkshop/bare-mux@2.1.7': {}
 
   '@mercuryworkshop/epoxy-tls@2.1.15-1': {}
 
@@ -948,7 +948,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.1.6
+      '@mercuryworkshop/bare-mux': 2.1.7
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.0
