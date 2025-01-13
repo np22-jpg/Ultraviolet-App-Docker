@@ -576,8 +576,8 @@ packages:
   merge-descriptors@1.0.3:
     resolution: {integrity: sha512-gaNvAS7TZ897/rVaZ0nMtAyxNyi/pdbjbAwUpFQpN70GqnVfOiXpeUUMKRBmzXaSQ8DdTX4/0ms62r2K+hE6mQ==}
 
-  meriyah@6.0.4:
-    resolution: {integrity: sha512-Hcas/D1O8qaRTb76L9jOHv0HXs83mJuaFjGcHnfrP2qlU+b/8XohHs2kDBNKejiiUihIFbSAFmLmBPNLUR9VLA==}
+  meriyah@6.0.5:
+    resolution: {integrity: sha512-SrMqQCox7TTwtftWKHy/ZaVe+ZRpRl20pAgDo+PS9hzcAJrMjYsBJQPPiLXTnjztrqdfGS+Zz99r6Bwvydta1w==}
     engines: {node: '>=18.0.0'}
 
   methods@1.1.2:
@@ -973,7 +973,7 @@ snapshots:
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.1
-      meriyah: 6.0.4
+      meriyah: 6.0.5
       parse5: 7.2.1
       set-cookie-parser: 2.7.1
 
@@ -1470,7 +1470,7 @@ snapshots:
 
   merge-descriptors@1.0.3: {}
 
-  meriyah@6.0.4: {}
+  meriyah@6.0.5: {}
 
   methods@1.1.2: {}
 
