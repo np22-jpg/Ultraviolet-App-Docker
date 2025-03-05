@@ -1,4 +1,4 @@
-FROM  quay.io/sclorg/nodejs-20-c9s@sha256:0f8a4a1aa343029842423c202d728e7b2064df164b94c80095fea36e851100e5 AS devel
+FROM  quay.io/sclorg/nodejs-20-c9s@sha256:80e7106bc12befa0881550a58a919860cee98b3c35f4a58bf41da9e442348e03 AS devel
 
 ARG NPM_BUILD="pnpm install --frozen-lockfile"
 
